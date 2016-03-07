@@ -1,0 +1,14 @@
+<div class="content">
+  <form action="/fizzbuzz" method="POST">
+    Fizz:<input type="text" name="Fizz" value=""  ></input>
+    Buzz:<input type="text" name="Buzz" value="" ></input>
+    <input type="submit" value="Compute" />
+  </form>
+  <p>
+    <% if @Result != [] && @Result != nil %>
+    <%  @Result.each do |value| %>
+    <%=   "#{value} , " %>
+    <%  end%>
+    <%end %>
+  </p>
+</div>
